@@ -1,0 +1,41 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.page_container {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Forum', cursive;
+}
+
+nav ul {
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline;
+}
+
+nav {
+	clear: both;
+	margin-bottom: 10px;
+}
+
+section {
+	margin-bottom: 10px;
+}
+
+.order_grid {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.order_grid img{
+	width: 50%;
+}
