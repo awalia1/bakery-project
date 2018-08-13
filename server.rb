@@ -47,22 +47,22 @@ get "/cookies" do
 	erb :cookies
 end
 
-# get "/muffins" do
-# 	@chocolate_chip_muffin = Muffin.new("Chippy Muffin", "$2.79", "$13.79", "Melted chocolate chips in a soft muffin. Yum.")
-# 	@banana_muffin = Muffin.new("The Potassium Muffin", "2.50", "12.99", "Have some Potassium with your muffin and avoid cramping by eating our banana muffin.")
-# 	@cornbread_muffin = Muffin.new("The Southener", "2.80", "14.99", "Ya'll better hurry on in for this delicious cornbread muffin, you hear now?")
-# 	@blueberry_muffin = Muffin.new("Blue", "2.60", "12.89", "Cure your blues with our Blueberry Muffin.")
-# 	@cinammon_muffin = Muffin.new("Sugar", "2.05", "11.59", "Got little bit more than a sweet tooth? Our cinammon muffin is for you.")
-# 	@coffee_muffin = Muffin.new("Expresso Bread", "2.20", "11.19", "Why drink your coffee, when you can eat our coffee muffin.")
-# 	erb :muffins
-# end
+get "/muffins" do
+	@chocolate_chip_muffin = Muffin.new("Chippy Muffin", "$2.79", "$13.79", "Melted chocolate chips in a soft muffin. Yum.", "cc_muffin.jpg")
+	@banana_muffin = Muffin.new("The Potassium Muffin", "2.50", "12.99", "Have some Potassium with your muffin and avoid cramping by eating our banana muffin.", "banana_muffin.jpg")
+	@cornbread_muffin = Muffin.new("The Southener", "2.80", "14.99", "Ya'll better hurry on in for this delicious cornbread muffin, you hear now?", "cornbread_muffin.jpg")
+	@blueberry_muffin = Muffin.new("Blue", "2.60", "12.89", "Cure your blues with our Blueberry Muffin.", "muffin.jpg")
+	@cinammon_muffin = Muffin.new("Sugar", "2.05", "11.59", "Got little bit more than a sweet tooth? Our cinammon muffin is for you.", "cinammon_muffin.jpg")
+	@coffee_muffin = Muffin.new("Expresso Bread", "2.20", "11.19", "Why drink your coffee, when you can eat our coffee muffin.", "coffee_muffin.jpg")
+	erb :muffins
+end
 
-# get "/cakes" do
-# 	@chocolate_cake = Cake.new("Choco-Choco", "$3.79", "$13.79", "We suggest milk with our soft chocolate cake.")
-# 	@red_velvet_cake = Cake.new("Red", "3.50", "12.99", "Our red velvet cake is so much more than chocolate cake with food coloring.")
-# 	@coconut_cake = Cake.new("CoCo", "3.80", "14.99", "We make our coconut cake with the very best coconuts.")
-# 	@blueberry_Cake = Cake.new("Blue", "3.60", "12.89", "Cure your blues with our Blueberry Cake.")
-# 	@ice_cream_Cake = Cake.new("Cold as Ice", "3.05", "11.59", "Sometimes the colder the cake, the better it is and it doesn't get any colder than our ice-cream cake.")
-# 	@coffee_Cake = Cake.new("Expresso Cake", "3.20", "11.19", "Why drink your coffee, when you can eat our coffee cake.")
-# 	erb :cakes
-# end
+get "/cakes" do
+	@chocolate_cake = Cake.new("Choco-Choco", "$3.79", "$13.79", "We suggest milk with our soft chocolate cake.", "chocolate_cake.jpg")
+	@red_velvet_cake = Cake.new("Red", "3.50", "12.99", "Our red velvet cake is so much more than chocolate cake with food coloring.", "red_velvet.jpg")
+	@coconut_cake = Cake.new("CoCo", "3.80", "14.99", "We make our coconut cake with the very best coconuts.", "coconut_cake.jpg")
+	@pound_cake = Cake.new("Pounds", "3.60", "12.89", "Add on some good LBs with our pound cake.", "pound_cake.jpg")
+	@ice_cream_cake = Cake.new("Cold as Ice", "3.05", "11.59", "Sometimes the colder the cake, the better it is and it doesn't get any colder than our ice-cream cake.", "ice_cream_cake.jpg")
+	@coffee_cake = Cake.new("Expresso Cake", "3.20", "11.19", "Why drink your coffee, when you can eat our coffee cake.", "coffee_cake.jpg")
+	erb :cakes
+end
