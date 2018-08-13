@@ -33,9 +33,9 @@ section {
 
 .order_grid {
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: auto auto auto;
 }
 
 .order_grid img{
-	width: 50%;
+	width: 75%;
 }
