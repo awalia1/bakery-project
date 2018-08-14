@@ -1,13 +1,18 @@
 		<section>
 			<div id="about">
 				<h2>About Us</h2>
-				<p>
-					In 2016 after ending his illustrious career in the NBA Kobe Byrant, our founder, felt lost. He decided he needed to dominate another field; bakery. Kobe had kept his love for baking to himself for years as he practiced for hours coming up with the perfect recipe's for cakes and pastries. Kobe now brings the same legendary competitiveness that he brought on the basketball court to the kitchen.
-				</p>
-
-				<p class= "quote">
-					"Kobe is synonymous with two things, beef and basketball, but now it's time to add sweets to that list."
-				</p>
+				<div class="about_grid">
+					<div class="about_text">
+							In 2016 after ending his illustrious career in the NBA Kobe Byrant, our founder, felt lost. He decided he needed to dominate another field; bakery. Kobe had kept his love for baking to himself for years as he practiced for hours coming up with the perfect recipe's for cakes and pastries. Kobe now brings the same legendary competitiveness that he brought on the basketball court to the kitchen.
+						<div class= "quote">
+							"Kobe is synonymous with two things, beef and basketball, but now it's time to add sweets to that list."
+							<p class="signature"> - Kobe 'The GOAT' Bryant</p>
+						</div>
+					</div>
+					<div>
+						<img src="images/kobe_cooking.jpg">
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -15,23 +20,41 @@
 			<h2>Menu</h2>
 			<div class= "order_grid">
 				<div>
-					<img src="images/cake.jpg">
+					<a href="/cakes">
+						<img src="images/cake.jpg">
+					</a>
 					<p>Cakes</p>
 				</div>
 				<div>
-					<img src="images/cookie.jpg">
+					<a href="/cookies">
+						<img src="images/cookie.jpg">
+					</a>
 					<p>Cookies</p>
 				</div>
 				<div>
-					<img src="images/muffin.jpg">
+					<a href="/muffins">
+						<img src="images/muffin.jpg">
+					</a>
 					<p>Muffins</p>
 				</div>		
 			</div>
 		</section>
 
+		<section id="events">
+			<% @events.each do |event| %>
+	    		<div class="list">  
+		        	<h2><%= event['name']['text'] %> </h2>
+		       	 	<img src=<%= event['logo']['url'] %> >
+		       	 	 <p> <%= event['description']['text'].slice(0..100) %>... </p>
+		       	 	 <a href=<%= event['url'] %> target="_blank"> Read More > </a>
+	    		</div>  
+        <% end %>
+		</section>
+
 		<section id="contact">
 			<h2>Contact</h2>
 			<p>Come visit us!</p>
-			<p>Locatated at:1111 S Figueroa St, Los Angeles, CA 90015</p>
+			<p>Locatated at: 1111 S Figueroa St, Los Angeles, CA 90015</p>
+			<p> Call ahead and pick-up!</p>
 			<p>Phone: 248-248-2424</p>
 		</section>

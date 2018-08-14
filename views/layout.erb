@@ -4,8 +4,8 @@
 	<title>Kobe's Bakery</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet">
 </head>
 <body>
 		
@@ -13,11 +13,11 @@
 		
 		<nav>
 			<ul>
-				<li>Home | </li>
-				<li>About | </li>
-				<li>Menu | </li>
-				<li>Events | </li>
-				<li>Contact</li>
+				<li><a href="/">Home</a> | </li>
+				<li><a href="#about">About</a> | </li>
+				<li><a href="#menu">Menu</a> | </li>
+				<li><a href="#events">Events</a> | </li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 
@@ -25,7 +25,12 @@
 		
 			<%=yield%>
 
-	</div>	
+		</div>	
+
+		<footer>
+			<p>&copy; Kobe's Bakery 2018</p>
+			<p> Amarpreet Walia </p>
+		</footer>
 
 	<script type='text/javascript' src='app.js'></script>
 
