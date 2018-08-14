@@ -55,7 +55,7 @@ section h2 {
 #about {
 	padding-top: 1%;
 	padding-bottom: 1.5%;
-	background-color: #FFCC5C;
+	color: black;
 }
 
 #about img {
@@ -73,8 +73,9 @@ section h2 {
 }
 
 .signature {
-	font-size: 1.5vw;
+	font-size: 1.9vw;
 	font-weight: normal;
+	font-family: 'Great Vibes', cursive;
 }
 
 .about_grid {
@@ -104,6 +105,15 @@ section h2 {
 	color: black;
 }
 
+.event_grid {
+	display: grid;
+	grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+#events h3 {
+	font-size: 1.2vw;
+}
+
 #contact {
 	background-color: #7DBAD8;
 	padding-top: 1%;
@@ -127,7 +137,7 @@ footer p {
 
 .product {
     cursor: pointer;
-	width: 98%;
+	width: 95%;
 }
 
 .product:hover {
@@ -142,6 +152,18 @@ footer p {
     background-color: #F9CAA7;
 }
 
+.content h1 {
+	font-size: 2vw;
+}
+
+.content h2 {
+	font-size: 1.7vw;
+}
+
+.content p {
+	font-size: 1.3vw;
+}
+
 .product_grid {
 	display:grid;
     grid-template-columns: 33% 33% 33%;
@@ -151,5 +173,8 @@ footer p {
 }
 
 .product_title {
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	font-size: 2vw;
 	color: black;
 }
