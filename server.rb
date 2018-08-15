@@ -39,7 +39,7 @@ get "/" do
 	# API_TOKEN=OCKPMYIIM7C2EIROTZN4
 	@query = 'baking'
     @location = 'queens'
-    response = HTTParty.get("https://www.eventbriteapi.com/v3/events/search/?q=#{@query}&location.address=#{@location}&token=OCKPMYIIM7C2EIROTZN4")
+    response = HTTParty.get("https://www.eventbriteapi.com/v3/events/search/?q=#{@query}&location.address=#{@location}&token=#{ENV['API_TOKEN']}")
     @event_data = JSON.parse(response.body)
     @events = @event_data['events'].first(3)
     erb :index

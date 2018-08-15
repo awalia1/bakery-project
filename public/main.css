@@ -110,6 +110,15 @@ section h2 {
 	grid-template-columns: 33.33% 33.33% 33.33%;
 }
 
+.list img {
+	max-width: 100%;
+}
+
+.event_grid h2 {
+	font-style:italic;
+	text-decoration: none;
+}
+
 #events h3 {
 	font-size: 1.2vw;
 }
